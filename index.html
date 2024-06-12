@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>TicTacToe</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="BLKB_Logo.jpg">
+    <link rel="icon" href="logo.png">
 </head>
 <body ONCLICK="checkwin()">
 <!-- Pedro -->
@@ -15,12 +15,12 @@
 <div class="resetscore">
     <button type="button" onclick="openmenu()" class="topbuttons" id="topbtn1">Menu</button>
     <button type="button" onclick="resetscore()" class="topbuttons" id="topbtn2">Reset Score</button>
-    <button type="button" onclick="setnamecomp()" class="topbuttons"id="topbtn3">Play against a Computer</button>
-    <button type="button" onclick="setdarkmode()" class="topbuttons"id="topbtn4">🌝</button>
+    <button type="button" onclick="setnamecomp()" class="topbuttons" id="topbtn3">Play against a Computer</button>
+    <button type="button" onclick="setdarkmode()" class="topbuttons" id="topbtn4">🌝</button>
 </div>
 
 <div class="Title">
-    <h1>Herzlich Willkommen zum BLKB TicTacToe!</h1>
+    <h1>Herzlich Willkommen zu TicTacToe!</h1>
 </div>
 <hr>
 
@@ -105,7 +105,7 @@
     <p id="player2"> Spieler2, bitte geben Sie einen Namen ein</p> <p id="player2score">0</p>
 </div>
 <div class="checkbox">
-    <p>Farben aktivieren</p>
+    <label for="checkcolor">Farben aktivieren</label>
     <input type="checkbox" id="checkcolor" onclick="colorcheck()">
 </div>
 

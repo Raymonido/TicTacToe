@@ -59,7 +59,7 @@ input {
     transition: background-color ease-in 0.3s;
     font-family: "Futura Std Light";
     position: relative;
-    cursor: url("icons8-select-26.png");
+    cursor: url("icons8-select-26.png"), auto;
 }
 
 input:hover{
@@ -69,8 +69,7 @@ input:hover{
 button {
     width: 100%;
     height: 100%;
-    transition: font-weight ease-in 0.3s;
-    transition: font-size ease-in 0.3s;
+    transition: all ease-in 0.3s;
     background-color: transparent;
     border: none;
     user-select: none;
@@ -153,8 +152,7 @@ button:hover {
     position: absolute;
     font-size: xx-small;
     border: black solid 1px;
-    transition: color ease-in 0.3s;
-    transition: background-color ease-in 0.3s;
+    transition: all ease-in 0.3s;
 }
 
 .pedrobutton:hover {
@@ -178,13 +176,15 @@ button:hover {
 .checkbox {
     display: flex;
     justify-content: center;
-    margin-top: 20px;gap: 1rem;
-    cursor: url("icons8-select-26.png", auto);
+    margin-top: 50px;
+    gap: 1rem;
+    cursor: url("icons8-select-26.png"), auto;
+    transform: scale(1.5);
 }
 
 #checkcolor {
     width: 23px;
-    cursor: url("icons8-select-26.png", auto);
+    cursor: url("icons8-select-26.png"), auto;
 }
 
 .navbar {
@@ -201,7 +201,7 @@ a {
     text-decoration: none;
     font-family: "Futura Std Medium";
     color: black;
-    cursor: url("icons8-select-26.png");
+    cursor: url("icons8-select-26.png"), auto;
 }
 
 ul {
@@ -223,10 +223,21 @@ ul:hover {
 /*Dark Mode*/
 .dark-mode {
     transition: ease-in-out 0.5s;
-    background-image: none;
     background-image: linear-gradient(to left, #212424, #0a0a0a);
     color: white;
     cursor: url("icons8-select-32.png"), auto;
+    button {
+        cursor: url("icons8-select-32.png"), auto;
+    }
+    input {
+        url("icons8-select-32.png"), auto
+    }
+    .winner {
+        url("icons8-select-32.png"), auto
+    }
+    .checkbox {
+        url("icons8-select-32.png"), auto
+    }
 }
 
 .dark-modepedro {
@@ -279,4 +290,8 @@ ul:hover {
 
 .dark-mode-input {
     background-color: #e8e6e6;
+}
+label {
+    display: flex;
+    align-items: center;
 }
