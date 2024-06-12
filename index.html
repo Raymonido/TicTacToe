@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" id="HTML">
+<head>
+    <meta name="keywords" content="blkb, tictactoe">
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="BLKB_Logo.jpg">
+</head>
+<body ONCLICK="checkwin()">
+<!-- Pedro -->
+<a href="https://www.google.com/search?q=Never+gonna+give+you+up&safe=active&sca_esv=1a0f9f064b6384e7&sca_upv=1&rlz=1C1GCEA_enCH1069CH1069&sxsrf=ACQVn0_lMEHT6i_Isr0H_XzMTZ34a_2gbQ%3A1713948984765&ei=OMkoZuyXLsL67_UPuMWTiAQ&ved=0ahUKEwjsk5nDvdqFAxVC_bsIHbjiBEEQ4dUDCBA&uact=5&oq=Never+gonna+give+you+up&gs_lp=Egxnd3Mtd2l6LXNlcnAiF05ldmVyIGdvbm5hIGdpdmUgeW91IHVwMgoQABiABBhDGIoFMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLqJBFAAWOaEBHAFeAGQAQCYAe4CoAHHEqoBCDI0LjEuMC4xuAEDyAEA-AEBmAIfoAKzE6gCEMICBxAjGCcY6gLCAhMQABiABBhDGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgoQIxiABBgnGIoFwgIEECMYJ8ICERAuGIAEGLEDGNEDGIMBGMcBwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxiDARiKBcICDBAjGIAEGBMYJxiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQLhiABBixAxiDAcICEBAAGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICAhAmwgIIEC4YgAQYsQPCAgoQLhiABBhDGIoFwgIQEC4YgAQYsQMYQxiDARiKBcICCBAuGIAEGNQCmAMEugYGCAEQARgBkgcIMjguMi4wLjGgB9a5Ag&sclient=gws-wiz-serp">
+    <img class="tenor-gif-embed" id="pedro" src="raccoon-rave.gif" alt="Pedro Raccoon GIF"/>
+</a>
+<div class="resetscore">
+    <button type="button" onclick="openmenu()" class="topbuttons" id="topbtn1">Menu</button>
+    <button type="button" onclick="resetscore()" class="topbuttons" id="topbtn2">Reset Score</button>
+    <button type="button" onclick="setnamecomp()" class="topbuttons"id="topbtn3">Play against a Computer</button>
+    <button type="button" onclick="setdarkmode()" class="topbuttons"id="topbtn4">🌝</button>
+</div>
+
+<div class="Title">
+    <h1>Herzlich Willkommen zum BLKB TicTacToe!</h1>
+</div>
+<hr>
+
+<div class="navbar" id="navigation">
+    <nav>
+        <ul id="nav1">
+            <a href="https://www.blkb.ch/" target="_blank" id="a1">Contact</a>
+        </ul>
+        <ul id="nav2">
+            <a href="https://www.blkb.ch/" target="_blank" id="a2">About</a>
+        </ul>
+        <ul id="nav3">
+            <a href="https://www.blkb.ch/" target="_blank" id="a3">Map</a>
+        </ul>
+    </nav>
+</div>
+
+<div class="nameselector">
+    <label for="fname">Spieler 1:  </label>
+    <input type="text" id="fname" name="fname" onchange="namesave1()">
+    <label for="lname">Spieler 2:  </label>
+    <input type="text" id="lname" name="lname" onchange="namesave2()">
+</div>
+
+<div class="container-block1">
+    <!-- Erstes Feld -->
+<div class="block">
+    <button type="button" id="1" onclick="triggerlog(1)">-</button>
+</div>
+    <!-- Zweites Feld -->
+<div class="block">
+    <button type="button" id="2" onclick="triggerlog(2)">-</button>
+</div>
+    <!-- Drittes Feld -->
+<div class="block">
+
+    <button type="button" id="3" onclick="triggerlog(3)">-</button>
+
+</div>
+    <!-- Viertes Feld -->
+<div class="block">
+
+    <button type="button" id="4" onclick="triggerlog(4)">-</button>
+
+</div>
+    <!-- Fünftes Feld -->
+<div class="block">
+
+    <button type="button" id="5" onclick="triggerlog(5)">-</button>
+
+</div>
+    <!-- Sechstes Feld -->
+<div class="block">
+
+    <button type="button" id="6" onclick="triggerlog(6)">-</button>
+
+</div>
+    <!-- Siebtes Feld -->
+<div class="block">
+
+    <button type="button" id="7" onclick="triggerlog(7)">-</button>
+
+</div>
+    <!-- Achtes Feld -->
+<div class="block">
+
+    <button type="button" id="8" onclick="triggerlog(8)">-</button>
+
+</div>
+    <!-- Neuntes Feld -->
+<div class="block">
+
+    <button type="button" id="9" onclick="triggerlog(9)">-</button>
+
+</div>
+</div>
+<div class="players">
+    <p id="player1"> Spieler1, bitte geben Sie einen Namen ein</p> <p id="player1score">0</p>
+
+</div>
+<div class="players">
+    <p id="player2"> Spieler2, bitte geben Sie einen Namen ein</p> <p id="player2score">0</p>
+</div>
+<div class="checkbox">
+    <p>Farben aktivieren</p>
+    <input type="checkbox" id="checkcolor" onclick="colorcheck()">
+</div>
+
+<div class="winner">
+    <h3 id="winner"></h3>
+</div>
+
+<div class="pedro">
+    <button class="pedrobutton" id="buttonpedro" onclick="pedro()">Don't click this Button</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
