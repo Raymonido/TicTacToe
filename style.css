@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Milky;
+    src: url("MilkyVintage-Regular.ttf");
+}
+
 html {
     cursor: url("icons8-select-26.png"), auto;
 }
@@ -5,7 +10,7 @@ html {
 body {
     transition: ease-in-out 0.5s;
     scroll-behavior: smooth;
-    font-family: "Futura Std Medium", serif;
+    font-family: "Milky", serif;
     overflow-x: hidden;
     background-image: linear-gradient(to left, #cfcacc, #e8e6e6, #f7f5f6);
 }
@@ -57,7 +62,7 @@ input {
     border: black solid 1px;
     border-radius: 5px;
     transition: background-color ease-in 0.3s;
-    font-family: "Futura Std Light";
+    font-family: "Milky", serif;
     position: relative;
     cursor: url("icons8-select-26.png"), auto;
 }
@@ -199,7 +204,7 @@ button:hover {
 
 a {
     text-decoration: none;
-    font-family: "Futura Std Medium";
+    font-family: "Milky", serif;
     color: black;
     cursor: url("icons8-select-26.png"), auto;
 }
